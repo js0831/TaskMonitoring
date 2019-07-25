@@ -1,0 +1,29 @@
+<app-page class="login">
+    
+    <h1 class="login__title">TASK MONITORING</h1>
+
+    <form  
+        [formGroup]="form"
+        (submit)="submitLogin()"
+        class="login__form">
+        <label>LOGIN</label>
+
+        <input  
+            formControlName="username"
+            placeholder="Username"  
+            type="text" 
+            name="" 
+            id="username" 
+            autocomplete="off">
+        
+        <input 
+            formControlName="password"        
+            placeholder="Password"
+            type="password" 
+            name="" 
+            id="password">
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</app-page>

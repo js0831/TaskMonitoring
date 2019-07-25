@@ -1,0 +1,71 @@
+/*
+* GLOBALS
+*/
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box; 
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html,
+body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**
+* ui.scss
+*/
+
+input{
+    transition: all .5s ease-out;
+
+    &[type=text],
+    &[type=password],
+    &[type=email],
+    &[type=number],
+    &[type=date]{
+        border:1px solid #cecece;
+
+        height:2.5rem;
+        padding: 0 1rem;
+        border-radius: .30rem;
+        outline: none;
+        color: #333;
+    }
+
+    &.ng-invalid{
+        &.ng-dirty{
+            border-color: #ff4343;
+        }
+    }
+}
+
+[type=button],
+[type=submit]{
+    background: #f1bd2e;
+    border: none;
+    color: #333;
+    padding: .5rem;
+    border-radius: .30rem;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;  
+
+    &:active{
+        background-color:#ffde84; 
+        color: #000; 
+    }
+}
+

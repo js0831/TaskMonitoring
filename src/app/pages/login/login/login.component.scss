@@ -1,0 +1,23 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title{
+        font-weight: normal;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__form{
+        display: grid;
+        grid-gap: .5rem;
+
+        label{
+            font-size: 1.25rem;
+            border-bottom: 0.1rem dotted #bbb;
+            padding-bottom: .5rem;
+        }
+    }
+}
